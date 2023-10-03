@@ -1,4 +1,7 @@
+import MonitorSession from './components/monitor-session'
+import NavBar from './components/nav-bar'
 import './globals.css'
+import { Provider } from './provider'
 
 export default function RootLayout({
   children,
@@ -7,7 +10,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Provider>
+          <MonitorSession />
+          <NavBar />
+          {children}
+        </Provider>
+      </body>
     </html>
   )
 }
