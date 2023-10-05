@@ -28,7 +28,7 @@ const FetchScPage = async () => {
   const notes = await fetchNotes(token?.value)
   return (
     <main className="flex flex-col items-center">
-      <h1 className="mt-10 font-bold">Notes page by CC</h1>
+      <h1 className="mt-10 font-bold">Notes page by SC</h1>
       <ul className="m-3">
         {notes?.map((note) => (
           <li key={note.id}>
