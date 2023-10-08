@@ -40,7 +40,7 @@ const TaskDetailPage = async ({ params }: PageProps) => {
   return (
     <div className="mt-16 p-8">
       <p>Task ID:{task.id}</p>
-      <p data-testid="title-dynamic-segment">Title:{task.title}</p>
+      <p data-testid="title-dynamic-segment">Title: {task.title}</p>
       <p>Status: {task.completed ? 'done' : 'not yet'}</p>
       <p>
         Created At:{' '}
